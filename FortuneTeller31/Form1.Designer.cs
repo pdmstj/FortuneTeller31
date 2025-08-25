@@ -35,7 +35,9 @@
             this.tbBirthday = new System.Windows.Forms.TextBox();
             this.tbBirthtime = new System.Windows.Forms.TextBox();
             this.btnShowResult = new System.Windows.Forms.Button();
+            this.tbResult = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -54,6 +56,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.tbResult);
             this.groupBox2.Location = new System.Drawing.Point(394, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(394, 426);
@@ -105,6 +108,14 @@
             this.btnShowResult.Text = "button1";
             this.btnShowResult.UseVisualStyleBackColor = true;
             // 
+            // tbResult
+            // 
+            this.tbResult.Location = new System.Drawing.Point(19, 21);
+            this.tbResult.Multiline = true;
+            this.tbResult.Name = "tbResult";
+            this.tbResult.Size = new System.Drawing.Size(356, 388);
+            this.tbResult.TabIndex = 0;
+            // 
             // FortuneTeller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -117,6 +128,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -130,6 +143,7 @@
         private System.Windows.Forms.TextBox tbBirthday;
         private System.Windows.Forms.TextBox tbBirthtime;
         private System.Windows.Forms.Button btnShowResult;
+        private System.Windows.Forms.TextBox tbResult;
     }
 }
 
