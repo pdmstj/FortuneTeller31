@@ -45,6 +45,7 @@ namespace FortuneTeller31
             }
         }
 
+
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             UpdateHistory();
@@ -55,6 +56,12 @@ namespace FortuneTeller31
             LoadHistory();
             lbHistory.Items.Clear();
             lbHistory.Items.AddRange(history.ToArray());
+        }
+
+        private void lbHistory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string message = history[lbHistory.SelectedIndex];
+            mainForm.LoadHistory(message);
         }
     }
 }
