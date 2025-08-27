@@ -12,6 +12,7 @@ namespace FortuneTeller31
 {
     public partial class FortuneTeller : Form
     {
+        List<string> result;
         public FortuneTeller()
         {
             InitializeComponent();
@@ -63,6 +64,11 @@ namespace FortuneTeller31
         {
             FormAbout form = new FormAbout();
             form.ShowDialog();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }
