@@ -18,6 +18,7 @@ namespace FortuneTeller31
         public FortuneTeller()
         {
             InitializeComponent();
+            LoadResults();
         }
 
         private void LoadResults()
@@ -82,7 +83,7 @@ namespace FortuneTeller31
             }
             else
             {
-                form = new FormHistory();
+                form = new FormHistory(this);
                 form.Show();
             }
         }
