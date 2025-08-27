@@ -16,5 +16,10 @@ namespace FortuneTeller31
         {
             InitializeComponent();
         }
+
+        private void lbHistory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
